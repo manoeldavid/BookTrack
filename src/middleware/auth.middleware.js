@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken');
 const SECRET = 'seu_segredo_supersecreto';
 
 const authenticate = (req, res, next) => {
-    console.log('Headers recebidos:', req.headers); // headers chegando
     const authHeader = req.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
