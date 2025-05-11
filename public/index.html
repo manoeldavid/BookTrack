@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>BookTrack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts/user.js"></script> <!-- DEFER para carregar após o DOM -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <ul class="navbar">
+      <li><a href="index.html">Usuário</a></li>
+      <li><a href="books.html">Livros</a></li>
+    </ul>
+  </header>
+
+  <main class="main-content">
+    <h1>Cadastre-se</h1>
+    <input type="text" id="nome" placeholder="Nome" /><br>
+    <input type="text" id="email" placeholder="Email" /><br>
+    <input type="password" id="senha" placeholder="Senha" /><br>
+    <button id="register">Registrar</button><br><br>
+
+    <button id="list-users">Listar usuários</button>
+    <ul id="user-list"></ul>
+
+    <h2>Excluir usuário</h2>
+    <input type="text" id="delete-email" placeholder="Email do usuário" />
+    <button id="delete-user">Excluir usuário</button>
+  </main>
+</body>
+</html>

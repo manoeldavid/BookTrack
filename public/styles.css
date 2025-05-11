@@ -1,0 +1,71 @@
+.navbar {
+  width: 100%;
+  background-color: #363636;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-books {
+  width: 100%;
+  background-color: #363636;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  list-style: none;
+}
+.navbar-books a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-books a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.form {
+    list-style: none;
+}
+
+.main, .main-content {
+  margin: 0 auto;
+  display: flex;
+  width: 100dvw;
+  max-width: 1200px;
+  height: 70dvh;
+  max-height: 80dvh;
+  border: 1px solid white;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
