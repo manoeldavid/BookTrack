@@ -43,9 +43,6 @@ docker-compose.yml — orquestração dos containers
   
 &nbsp;&nbsp;&nbsp;&nbsp;Crie um arquivo .env na raiz com as seguintes variáveis:
 
-ini
-Copy
-Edit
 DB_HOST=db  
 DB_PORT=3306  
 DB_USER=root  
