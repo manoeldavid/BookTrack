@@ -8,8 +8,7 @@ const register = async (req, res) => {
     try {
         const { nome, email, senha } = req.body;
 
-        const hashedPassword = await bcrypt.hash(senha, 10);
-        const user = await UserService.createUser({ nome, email, senha: hashedPassword });
+        const user = await UserService.createUser({ nome, email, senha });
 
         return res.status(201).json({ id: user.id, nome: user.nome, email: user.email });
     } catch (err) {

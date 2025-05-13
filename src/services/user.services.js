@@ -1,4 +1,5 @@
 const User = require('../models/user.model');
+const bcrypt = require('bcryptjs');
 
 const createUser = async ({ nome, email, senha }) => {
     if (!nome || nome.length < 3) throw new Error('Nome inválido');
@@ -7,7 +8,9 @@ const createUser = async ({ nome, email, senha }) => {
     const emailExists = await User.findOne({ where: { email } });
     if (emailExists) throw new Error('Email já cadastrado');
 
-    const user = await User.create({ nome, email, senha });
+    const hashedPassword = await bcrypt.hash(senha, 10);
+    const user = await User.create({ nome, email, senha: hashedPassword });
+
     return user;
 };
 

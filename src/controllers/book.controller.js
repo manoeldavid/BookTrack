@@ -19,7 +19,7 @@ const getAllBooks = async (req, res) => {
 
 const updateBook = async (req, res) => {
     try {
-        const book = BookService.updateBook(req.params.id, req.body, req.user.id);
+        const book = await BookService.updateBook(Number(req.params.id), req.body, req.user.id);
         return res.json(book);
     } catch (err) {
         return res.status(400).json({ error: err.message });
